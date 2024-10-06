@@ -4,6 +4,8 @@ from sqlalchemy_utils import database_exists, create_database
 
 import models
 
+# muuta db_url-muuttuja vastaamaan oman postgres-serverisi ja tietokantasi tietoja
+
 db_url = 'postgresql+psycopg2://postgres:salasana@localhost/sovelluskehykset_bad1'
 
 engine = create_engine(db_url)
